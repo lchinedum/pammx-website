@@ -26,7 +26,7 @@ IONOS auto-detects Next.js. If needed, set:
 
 - **Build command:** `npm run build`
 - **Output directory:** `out`
-- **Root directory:** `PAMMX Website` (if your repo has the project in a subfolder)
+- **Root directory:** `/` (repository root — website files are no longer in a subfolder)
 
 ### Step 4: Deploy
 
@@ -86,7 +86,7 @@ Ensure your code is on GitHub (same as Option 1).
    - Framework preset: **Next.js (Static HTML Export)**
    - Build command: `npm run build`
    - Build output directory: `out`
-   - Root directory: `PAMMX Website` (if your repo has the project in a subfolder)
+   - Root directory: `/` (repository root)
 5. Click **Save and Deploy**
 6. You'll get a URL like `pammx.pages.dev`
 
