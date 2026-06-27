@@ -5,7 +5,7 @@ import type { Metadata } from "next";
 export const metadata: Metadata = {
   title: "Contact | PAMMX",
   description:
-    "Get in touch with PAMMX. Email support@pammx.com or call Lucky or Matt.",
+    "Get in touch with PAMMX. Email support@pammx.com or call Lucky.",
 };
 
 export default function ContactPage() {
@@ -43,17 +43,6 @@ export default function ContactPage() {
                     className="mt-1 block text-pammx-blue hover:underline"
                   >
                     {CONTACT.lucky.phone}
-                  </a>
-                </li>
-                <li>
-                  <span className="text-sm text-gray-500">
-                    {CONTACT.matt.name}
-                  </span>
-                  <a
-                    href={`tel:${CONTACT.matt.raw}`}
-                    className="mt-1 block text-pammx-blue hover:underline"
-                  >
-                    {CONTACT.matt.phone}
                   </a>
                 </li>
               </ul>

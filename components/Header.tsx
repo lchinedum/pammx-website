@@ -45,20 +45,20 @@ export function Header() {
             </Link>
           ))}
           <a
-            href={SITE_LINKS.strategy}
+            href={SITE_LINKS.investor}
             target="_blank"
             rel="noopener noreferrer"
             className="text-sm font-medium text-pammx-blue hover:text-blue-400"
           >
-            View Strategy
+            Live Stats
           </a>
           <a
-            href={SITE_LINKS.investor}
+            href={SITE_LINKS.invite}
             target="_blank"
             rel="noopener noreferrer"
             className="rounded-lg bg-pammx-green px-4 py-2 text-sm font-semibold text-white transition hover:bg-emerald-500"
           >
-            Request Access
+            Copy Strategy
           </a>
         </div>
 
@@ -107,22 +107,22 @@ export function Header() {
               </Link>
             ))}
             <a
-              href={SITE_LINKS.strategy}
+              href={SITE_LINKS.investor}
               target="_blank"
               rel="noopener noreferrer"
               className="block rounded-lg px-3 py-2 text-sm font-medium text-pammx-blue"
               onClick={() => setMobileOpen(false)}
             >
-              View Strategy
+              Live Stats
             </a>
             <a
-              href={SITE_LINKS.investor}
+              href={SITE_LINKS.invite}
               target="_blank"
               rel="noopener noreferrer"
               className="block rounded-lg bg-pammx-green px-3 py-2 text-center text-sm font-semibold text-white"
               onClick={() => setMobileOpen(false)}
             >
-              Request Access
+              Copy Strategy
             </a>
           </div>
         </div>

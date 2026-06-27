@@ -1,23 +1,81 @@
-# Deploy PAMMX to www.pammx.com (IONOS Domain) — FREE Hosting
+# Deploy PAMMX to www.pammx.com (IONOS Domain)
 
-This guide uses **free hosting** (no credit card, no subscription). Your only cost is the domain you already paid for at IONOS.
-
-**Recommended: Cloudflare Pages** — Unlimited bandwidth, free SSL, global CDN.
-
-The project is configured for **static export** (`output: 'export'` in next.config.js), which works on free hosting. The cTrader embed loads client-side and works with static sites.
+The project is configured for **static export** (`output: 'export'` in next.config.js). The cTrader embed loads client-side and works with static sites.
 
 ---
 
-## Option A: Cloudflare Pages (Recommended — Fully Free)
+## Option 1: IONOS Deploy Now (Host on IONOS)
+
+Deploy directly on IONOS using your GitHub repo. **30-day free trial**, then ~$4/month.
 
 ### Step 1: Push to GitHub
 
+Ensure your code is on GitHub (e.g. `github.com/lchinedum/pammx-website`).
+
+### Step 2: Connect IONOS Deploy Now
+
+1. Log in to [IONOS](https://www.ionos.com)
+2. Go to **Hosting** → **Deploy Now** (or [ionos.com/hosting/deploy-now](https://www.ionos.com/hosting/deploy-now))
+3. Click **Create project** → **Connect GitHub**
+4. Authorize the IONOS Deploy Now GitHub App
+5. Select your `pammx-website` repository and branch (`pammx-website` or `main`)
+
+### Step 3: Build Settings
+
+IONOS auto-detects Next.js. If needed, set:
+
+- **Build command:** `npm run build`
+- **Output directory:** `out`
+- **Root directory:** `PAMMX Website` (if your repo has the project in a subfolder)
+
+### Step 4: Deploy
+
+1. Click **Deploy** — IONOS builds and deploys
+2. You get a URL like `your-project.ionos.space`
+3. Go to **Settings** → **Custom domain** → Add `www.pammx.com`
+4. IONOS will configure DNS for your IONOS domain automatically (or show you what to add)
+
+### Step 5: IONOS DNS (if not auto-configured)
+
+In IONOS → **Domains** → **pammx.com** → **Manage DNS**:
+
+| Type | Name | Target |
+|------|------|--------|
+| CNAME | www | *(value from Deploy Now)* |
+
+---
+
+## Option 2: IONOS Web Hosting (FTP Upload)
+
+If you have IONOS Web Hosting (e.g. with your domain):
+
+### Step 1: Build locally
+
 ```bash
-cd C:\Users\theek\.cursor\worktrees\PAMMX_Website\ole
-git add .
-git commit -m "PAMMX website"
-git push origin main
+cd "c:\Users\theek\projects\PAMMX Website"
+npm install
+npm run build
 ```
+
+This creates the `out` folder with static files.
+
+### Step 2: Upload via SFTP
+
+1. Get your SFTP credentials from IONOS (Hosting → Webspace → FTP access)
+2. Use FileZilla or similar: connect via **SFTP** (port 22)
+3. Upload **all contents** of the `out` folder to your web root (`/` or `htdocs` or `public_html`)
+
+### Step 3: Domain
+
+Your domain should already point to your IONOS hosting. If not, set the A record in IONOS DNS to your hosting IP.
+
+---
+
+## Option 3: Cloudflare Pages (Fully Free)
+
+### Step 1: Push to GitHub
+
+Ensure your code is on GitHub (same as Option 1).
 
 ### Step 2: Deploy on Cloudflare Pages
 
@@ -28,7 +86,7 @@ git push origin main
    - Framework preset: **Next.js (Static HTML Export)**
    - Build command: `npm run build`
    - Build output directory: `out`
-   - Root directory: leave default (or the folder containing the project)
+   - Root directory: `PAMMX Website` (if your repo has the project in a subfolder)
 5. Click **Save and Deploy**
 6. You'll get a URL like `pammx.pages.dev`
 
@@ -59,7 +117,7 @@ Or use **Cloudflare as your DNS** (optional): Change nameservers at IONOS to Clo
 
 ---
 
-## Option B: Netlify (Free Tier)
+## Option 4: Netlify (Free Tier)
 
 ### Step 1: Push to GitHub
 
@@ -93,7 +151,7 @@ Netlify will show the exact CNAME target for your site.
 
 ---
 
-## IONOS DNS Summary (for both options)
+## IONOS DNS Summary (for Options 3 & 4)
 
 | Type | Name | Target |
 |------|------|--------|

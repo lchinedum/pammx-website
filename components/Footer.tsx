@@ -20,8 +20,8 @@ export function Footer() {
               PAMMX
             </h3>
             <p className="mt-2 text-sm text-gray-400">
-              Copy Trading Strategy. Active index trading for consistent,
-              short-term market engagement.
+              Gold-focused copy trading on IC Markets cTrader. Primarily XAUUSD
+              with occasional NASDAQ and GBPUSD.
             </p>
           </div>
 
@@ -64,14 +64,6 @@ export function Footer() {
                   {CONTACT.lucky.name}: {CONTACT.lucky.phone}
                 </a>
               </li>
-              <li>
-                <a
-                  href={`tel:${CONTACT.matt.raw}`}
-                  className="transition hover:text-white"
-                >
-                  {CONTACT.matt.name}: {CONTACT.matt.phone}
-                </a>
-              </li>
             </ul>
           </div>
 
@@ -82,12 +74,12 @@ export function Footer() {
             <ul className="mt-4 space-y-2">
               <li>
                 <a
-                  href={SITE_LINKS.strategy}
+                  href={SITE_LINKS.invite}
                   target="_blank"
                   rel="noopener noreferrer"
                   className="text-sm text-gray-400 transition hover:text-white"
                 >
-                  View Strategy
+                  Copy Strategy
                 </a>
               </li>
               <li>

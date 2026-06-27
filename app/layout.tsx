@@ -9,7 +9,7 @@ export const metadata: Metadata = {
     template: "%s | PAMMX",
   },
   description:
-    "Smart Capital. Automated Growth. A disciplined index-trading strategy engineered for consistent, short-term market engagement.",
+    "Gold-focused copy trading on IC Markets cTrader. Primarily XAUUSD with occasional NASDAQ and GBPUSD. 25% performance fee, $100 minimum.",
   icons: {
     icon: "/images/pammx-logo.png",
     apple: "/images/pammx-logo.png",
@@ -17,7 +17,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "PAMMX | Copy Trading Strategy",
     description:
-      "Active exposure to global index markets through a rules-based, momentum-driven trading system.",
+      "Copy PAMMX on IC Markets — gold-focused strategy. 25% performance fee, no management fee.",
     type: "website",
   },
 };

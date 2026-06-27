@@ -1,4 +1,4 @@
-import { SITE_LINKS } from "@/lib/constants";
+import { SITE_LINKS, STRATEGY } from "@/lib/constants";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
@@ -16,11 +16,11 @@ const expectations = [
 ];
 
 const steps = [
-  "Submit investor inquiry",
-  "Receive onboarding instructions",
-  "Complete KYC (if applicable)",
-  "Fund account",
-  "Begin receiving performance updates",
+  "Click the Copy PAMMX invite link",
+  "Open or log in to IC Markets (cTrader)",
+  "Complete verification if required",
+  `Fund your account ($${STRATEGY.minInvestment} minimum)`,
+  "Start copying — trades mirror automatically",
 ];
 
 export default function OnboardingPage() {
@@ -85,16 +85,16 @@ export default function OnboardingPage() {
         <div className="mt-12 rounded-lg border border-pammx-green/30 bg-pammx-green/5 p-8">
           <h3 className="text-xl font-bold text-white">Get Started</h3>
           <p className="mt-2 text-gray-300">
-            Minimum recommended investment: $100+. Use the investor access link
-            below to begin.
+            Minimum investment: ${STRATEGY.minInvestment}. Use the invite link
+            below to copy PAMMX on cTrader Copy.
           </p>
           <a
-            href={SITE_LINKS.investor}
+            href={SITE_LINKS.invite}
             target="_blank"
             rel="noopener noreferrer"
             className="mt-6 inline-flex rounded-lg bg-pammx-green px-6 py-3 font-semibold text-white hover:bg-emerald-500"
           >
-            Request Access →
+            Copy PAMMX Strategy →
           </a>
         </div>
       </section>
