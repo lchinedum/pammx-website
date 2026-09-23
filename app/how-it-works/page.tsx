@@ -5,28 +5,26 @@ import type { Metadata } from "next";
 export const metadata: Metadata = {
   title: "How It Works | PAMMX",
   description:
-    "Learn how PAMMX executes strategy, scales positions, manages risk, and optimizes for evolving market conditions.",
+    "Learn how PAMMX trades are placed, managed, and risk-controlled — manually, with discipline.",
 };
 
 const steps = [
   {
     title: "Strategy Execution",
-    desc: "PAMMX trades short-term momentum patterns on major global indices using a structured entry model.",
+    desc: "PAMMX trades short-term momentum patterns — primarily on gold (XAUUSD) — using a discretionary entry model.",
     image: "/images/ctrader-compact.png",
   },
   {
-    title: "Scaling & Profit Targets",
-    desc: "Positions scale out at TP1–TP4, reducing risk while capturing extended moves.",
-    image: "/images/ctrader-scaling-1.png",
+    title: "Active Trade Management",
+    desc: "Positions are managed as they develop — locking in gains and reducing exposure while letting winners run.",
   },
   {
-    title: "Automated Risk Controls",
+    title: "Active Risk Management",
     desc: "Exposure decreases as trades move into profit, ensuring capital preservation.",
-    image: "/images/ctrader-scaling-2.png",
   },
   {
-    title: "Continuous Optimization",
-    desc: "The system adapts to evolving market conditions while maintaining strict rule-based execution.",
+    title: "Continuous Market Read",
+    desc: "The trader adapts to evolving market conditions while maintaining strict risk discipline.",
   },
 ];
 
@@ -38,7 +36,7 @@ export default function HowItWorksPage() {
           How It Works
         </h1>
         <p className="mt-4 max-w-3xl text-gray-300">
-          A four-step process from entry to optimization.
+          How PAMMX trades are placed, managed, and risk-controlled.
         </p>
       </section>
 
