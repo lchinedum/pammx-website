@@ -6,10 +6,11 @@ import { SITE_LINKS, STRATEGY } from "@/lib/constants";
 const highlights = [
   `Primary focus: ${STRATEGY.primaryMarket}`,
   "Occasional NASDAQ & GBPUSD setups",
-  "Automated, rules-based execution",
+  "Discretionary trading, 1% risk per trade",
   "25% performance fee on profits only",
   `Minimum investment: $${STRATEGY.minInvestment}`,
   "Your funds stay in your own account",
+  "Track record: 203 trades · 65.5% win rate · 2.27 profit factor",
 ];
 
 const markets = [
@@ -23,7 +24,7 @@ const markets = [
     symbol: "NASDAQ",
     name: "US Tech Index",
     role: "Occasional",
-    desc: "Taken when conditions align with the system's rules.",
+    desc: "Traded selectively, when market conditions warrant.",
   },
   {
     symbol: "GBPUSD",
@@ -44,8 +45,8 @@ export default function HomePage() {
             Gold-Focused Copy Trading
           </h2>
           <p className="mt-4 text-lg text-gray-300">
-            PAMMX is a disciplined, rules-based strategy on{" "}
-            {STRATEGY.platform}. You copy the same account we trade, with full
+            PAMMX is a manually traded, disciplined strategy on{" "}
+            {STRATEGY.platform}. You copy the same account the trader runs, with full
             transparency on performance and drawdowns.
           </p>
         </div>
