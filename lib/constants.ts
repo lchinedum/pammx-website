@@ -8,7 +8,7 @@ export const SITE_LINKS = {
 
 export const STRATEGY = {
   name: "PAMMX",
-  tagline: "Smart Capital. Automated Growth.",
+  tagline: "Smart Capital. Disciplined Trading.",
   markets: ["XAUUSD (Gold)", "NASDAQ", "GBPUSD"],
   primaryMarket: "Gold (XAUUSD)",
   minInvestment: 100,
