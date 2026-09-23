@@ -1,7 +1,7 @@
 /** cTrader Copy invite link — sends investors to copy PAMMX on IC Markets */
 export const SITE_LINKS = {
-  invite: "https://ct-sc.icmarkets.com/copy/strategy/113562?u=ctid7997148",
-  strategy: "https://ct-sc.icmarkets.com/copy/strategy/113562?u=ctid7997148",
+  invite: "https://ct-sc.icmarkets.com/copy/strategy/122707?u=ctid7997148",
+  strategy: "https://ct-sc.icmarkets.com/copy/strategy/122707?u=ctid7997148",
   investor: "https://ct-sc.icmarkets.com/investor/3hGJLQk?u=ctid7997148",
   ctraderProfile: "https://ctrader.com/u/ctid7997148",
 } as const;
@@ -24,5 +24,5 @@ export const CONTACT = {
 
 export const CTRADER_EMBED = {
   widgetUrl: "https://ct-sc.icmarkets.com/widget.js",
-  route: "/esp/113562/?lang=en&theme=dark&u=ctid7997148",
+  route: "/esp/122707/?lang=en&theme=dark&u=ctid7997148",
 } as const;
