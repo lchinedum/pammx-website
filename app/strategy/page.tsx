@@ -6,7 +6,7 @@ import type { Metadata } from "next";
 export const metadata: Metadata = {
   title: "Strategy Overview | PAMMX",
   description:
-    "Active index trading built for consistency. PAMMX uses structured entries, disciplined scaling, and rapid profit realization through a multi-target exit framework.",
+    "PAMMX is a manually traded, gold-focused strategy on cTrader Copy — discretionary execution with strict 1% risk per trade.",
 };
 
 export default function StrategyPage() {
@@ -14,18 +14,19 @@ export default function StrategyPage() {
     <>
       <section className="mx-auto max-w-7xl px-4 py-16 sm:px-6 lg:px-8">
         <h1 className="text-3xl font-bold text-white sm:text-4xl">
-          Active Index Trading, Built for Consistency
+          Discretionary Gold Trading, Built on Discipline
         </h1>
         <p className="mt-6 max-w-3xl text-lg text-gray-300">
-          PAMMX is an active index trading strategy designed to capture
-          short-term momentum across highly liquid global indices. The system
-          uses structured entries, disciplined scaling, and rapid profit
-          realization through a multi-target exit framework.
+          PAMMX is a manually traded strategy focused on gold (XAUUSD), with
+          occasional NASDAQ and GBPUSD trades. Every position is placed and
+          managed by an experienced trader — no algorithms, no bots — with
+          strict 1% risk per trade.
         </p>
         <p className="mt-4 max-w-3xl text-gray-300">
-          Trades follow a predefined scaling model with four profit targets
-          (TP1–TP4), allowing early risk reduction while maintaining exposure
-          when markets trend favorably.
+          Track record: 203 trades · 65.5% win rate · 2.27 profit factor · 1%
+          risk per trade. Winners are managed actively — profits are taken as
+          trades develop and exposure is reduced as positions move in our
+          favor.
         </p>
       </section>
 
@@ -43,12 +44,12 @@ export default function StrategyPage() {
                 desc: "Operates in highly liquid index markets where volatility provides consistent short-term momentum.",
               },
               {
-                title: "Systematic Profit-Taking",
-                desc: "Positions scale out as targets are reached, locking in gains while reducing exposure.",
+                title: "Active Trade Management",
+                desc: "Positions are managed as targets are reached — locking in gains and reducing exposure while letting winners run.",
               },
               {
                 title: "Capital Preservation First",
-                desc: "Risk management is embedded directly into the execution structure, with strict rules governing entries, exits, and maximum exposure.",
+                desc: "Risk management is non-negotiable: every trade risks a maximum of 1%, with defined exits and capped exposure.",
               },
             ].map((item) => (
               <div
@@ -80,34 +81,6 @@ export default function StrategyPage() {
         <div className="mt-12 grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
           <div className="overflow-hidden rounded-lg border border-white/10">
             <Image
-              src="/images/ctrader-scaling-1.png"
-              alt="PAMMX scaling entries - 120 Lots, multi-level scaling"
-              width={600}
-              height={400}
-              className="h-48 w-full object-cover object-top"
-            />
-            <div className="bg-pammx-dark-800 p-4">
-              <p className="text-sm text-gray-300">
-                Scaling entries (60+60 Lots) with systematic profit-taking
-              </p>
-            </div>
-          </div>
-          <div className="overflow-hidden rounded-lg border border-white/10">
-            <Image
-              src="/images/ctrader-scaling-2.png"
-              alt="PAMMX multi-level scaling - 240 Lots"
-              width={600}
-              height={400}
-              className="h-48 w-full object-cover object-top"
-            />
-            <div className="bg-pammx-dark-800 p-4">
-              <p className="text-sm text-gray-300">
-                Multi-target scaling (TP1–TP4) in action
-              </p>
-            </div>
-          </div>
-          <div className="overflow-hidden rounded-lg border border-white/10">
-            <Image
               src="/images/ctrader-compact.png"
               alt="Short-term trade execution"
               width={600}
@@ -131,9 +104,9 @@ export default function StrategyPage() {
           <ul className="mt-6 space-y-3 text-gray-300">
             {[
               "Positions reduce as trades move into profit",
-              "Exposure decreases automatically",
+              "Exposure is reduced as trades move into profit",
               "No long holding periods",
-              "Strict rules for entries, exits, and scaling",
+              "Defined entries, exits, and position sizing on every trade",
               "Designed to protect capital while participating in favorable market conditions",
             ].map((item) => (
               <li key={item} className="flex items-start gap-2">
@@ -156,7 +129,7 @@ export default function StrategyPage() {
             "Short-term trade cycles",
             "Controlled drawdowns",
             "Medium- to long-term capital growth",
-            "A systematic, rules-based approach",
+            "A disciplined, trader-led approach",
           ].map((item) => (
             <li key={item} className="flex items-center gap-2">
               <span className="text-pammx-green">•</span> {item}
