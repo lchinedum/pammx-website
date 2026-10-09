@@ -20,8 +20,8 @@ export function Footer() {
               PAMMX
             </h3>
             <p className="mt-2 text-sm text-gray-400">
-              Gold-focused copy trading on IC Markets cTrader. Primarily XAUUSD
-              with occasional NASDAQ and GBPUSD.
+              Automated multi-asset copy trading on IC Markets cTrader. XAUUSD,
+              BTCUSD, EURUSD and USDCAD — run by trading bots.
             </p>
           </div>
 
