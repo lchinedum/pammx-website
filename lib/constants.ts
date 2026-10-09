@@ -9,7 +9,7 @@ export const SITE_LINKS = {
 export const STRATEGY = {
   name: "PAMMX",
   tagline: "Smart Capital. Disciplined Trading.",
-  markets: ["XAUUSD (Gold)", "NASDAQ", "GBPUSD"],
+  markets: ["XAUUSD (Gold)", "BTCUSD (Bitcoin)", "EURUSD", "USDCAD"],
   primaryMarket: "Gold (XAUUSD)",
   minInvestment: 100,
   performanceFee: 25,
