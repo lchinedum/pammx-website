@@ -6,7 +6,7 @@ import type { Metadata } from "next";
 export const metadata: Metadata = {
   title: "Strategy Overview | PAMMX",
   description:
-    "PAMMX is a manually traded, gold-focused strategy on cTrader Copy — discretionary execution with strict 1% risk per trade.",
+    "PAMMX is an automated, multi-asset strategy on cTrader Copy — bot-executed with strict 1% risk per trade.",
 };
 
 export default function StrategyPage() {
@@ -14,13 +14,12 @@ export default function StrategyPage() {
     <>
       <section className="mx-auto max-w-7xl px-4 py-16 sm:px-6 lg:px-8">
         <h1 className="text-3xl font-bold text-white sm:text-4xl">
-          Discretionary Gold Trading, Built on Discipline
+          Automated Multi-Asset Trading, Built on Discipline
         </h1>
         <p className="mt-6 max-w-3xl text-lg text-gray-300">
-          PAMMX is a manually traded strategy focused on gold (XAUUSD), with
-          occasional NASDAQ and GBPUSD trades. Every position is placed and
-          managed by an experienced trader — no algorithms, no bots — with
-          strict 1% risk per trade.
+          PAMMX is a fully automated strategy trading XAUUSD (gold), BTCUSD,
+          EURUSD and USDCAD. Every position is placed and managed by trading
+          bots — no manual intervention — with strict 1% risk per trade.
         </p>
         <p className="mt-4 max-w-3xl text-gray-300">
           Track record: 203 trades · 65.5% win rate · 2.27 profit factor · 1%
