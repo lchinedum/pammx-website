@@ -80,8 +80,8 @@ export default function StrategyPage() {
         <div className="mt-12 grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
           <div className="overflow-hidden rounded-lg border border-white/10">
             <Image
-              src="/images/ctrader-compact.png"
-              alt="Short-term trade execution"
+              src="/images/bots-execution.webp"
+              alt="Automated trading bots executing"
               width={600}
               height={400}
               className="h-48 w-full object-cover object-top"
