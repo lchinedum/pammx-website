@@ -34,11 +34,11 @@ export function HeroBanner() {
               {STRATEGY.tagline}
             </h1>
             <p className="mt-4 max-w-2xl text-lg text-gray-300">
-              Primarily <strong className="text-white">gold (XAUUSD)</strong>,
-              with occasional <strong className="text-white">NASDAQ</strong> and{" "}
-              <strong className="text-white">GBPUSD</strong> trades.
-              Discretionary trading by an experienced trader, mirrored on
-              cTrader Copy in real time.
+              <strong className="text-white">XAUUSD (gold)</strong>,{" "}
+              <strong className="text-white">BTCUSD</strong>,{" "}
+              <strong className="text-white">EURUSD</strong> and{" "}
+              <strong className="text-white">USDCAD</strong>. Fully automated
+              bot trading, mirrored on cTrader Copy in real time.
             </p>
             <div className="mt-6 flex flex-wrap justify-center gap-3 lg:justify-start">
               {[
