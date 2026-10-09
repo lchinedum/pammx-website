@@ -2,7 +2,7 @@
 export const SITE_LINKS = {
   invite: "https://ct-sc.icmarkets.com/copy/strategy/122707?u=ctid7997148",
   strategy: "https://ct-sc.icmarkets.com/copy/strategy/122707?u=ctid7997148",
-  investor: "https://ct-sc.icmarkets.com/investor/3hGJLQk?u=ctid7997148",
+  investor: "https://ct-sc.icmarkets.com/investor/lWMyOAtj?lang=en&theme=dark&platform=ios&u=ctid7997148",
   ctraderProfile: "https://ctrader.com/u/ctid7997148",
 } as const;
 
