@@ -12,7 +12,7 @@ const steps = [
   {
     title: "Strategy Execution",
     desc: "PAMMX runs automated trading bots across XAUUSD (gold), BTCUSD, EURUSD and USDCAD — systematic entries with no manual intervention.",
-    image: "/images/ctrader-compact.png",
+    image: "/images/multi-asset-flow.webp",
   },
   {
     title: "Active Trade Management",
