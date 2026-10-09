@@ -5,13 +5,13 @@ import type { Metadata } from "next";
 export const metadata: Metadata = {
   title: "How It Works | PAMMX",
   description:
-    "Learn how PAMMX trades are placed, managed, and risk-controlled — manually, with discipline.",
+    "Learn how PAMMX trades are placed, managed, and risk-controlled — automatically, with discipline.",
 };
 
 const steps = [
   {
     title: "Strategy Execution",
-    desc: "PAMMX trades short-term momentum patterns — primarily on gold (XAUUSD) — using a discretionary entry model.",
+    desc: "PAMMX runs automated trading bots across XAUUSD (gold), BTCUSD, EURUSD and USDCAD — systematic entries with no manual intervention.",
     image: "/images/ctrader-compact.png",
   },
   {
@@ -24,7 +24,7 @@ const steps = [
   },
   {
     title: "Continuous Market Read",
-    desc: "The trader adapts to evolving market conditions while maintaining strict risk discipline.",
+    desc: "The bots execute their programmed edge around the clock while maintaining strict risk discipline.",
   },
 ];
 
