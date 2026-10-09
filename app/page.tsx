@@ -4,9 +4,8 @@ import Link from "next/link";
 import { SITE_LINKS, STRATEGY } from "@/lib/constants";
 
 const highlights = [
-  `Primary focus: ${STRATEGY.primaryMarket}`,
-  "Occasional NASDAQ & GBPUSD setups",
-  "Discretionary trading, 1% risk per trade",
+  "Multi-asset: XAUUSD, BTCUSD, EURUSD & USDCAD",
+  "Automated bot trading, 1% risk per trade",
   "25% performance fee on profits only",
   `Minimum investment: $${STRATEGY.minInvestment}`,
   "Your funds stay in your own account",
@@ -18,19 +17,25 @@ const markets = [
     symbol: "XAUUSD",
     name: "Gold",
     role: "Primary",
-    desc: "Most trades target gold momentum and session-based setups.",
+    desc: "Gold bot — momentum and session-based setups.",
   },
   {
-    symbol: "NASDAQ",
-    name: "US Tech Index",
-    role: "Occasional",
-    desc: "Traded selectively, when market conditions warrant.",
+    symbol: "BTCUSD",
+    name: "Bitcoin",
+    role: "Bot-traded",
+    desc: "BTC bot — catches large directional swings.",
   },
   {
-    symbol: "GBPUSD",
-    name: "Cable",
-    role: "Occasional",
-    desc: "FX exposure when high-probability setups appear.",
+    symbol: "EURUSD",
+    name: "Euro",
+    role: "Bot-traded",
+    desc: "Forex bot — steady FX exposure.",
+  },
+  {
+    symbol: "USDCAD",
+    name: "Loonie",
+    role: "Bot-traded",
+    desc: "Forex bot — steady FX exposure.",
   },
 ];
 
@@ -42,11 +47,11 @@ export default function HomePage() {
       <section className="mx-auto max-w-7xl px-4 py-16 sm:px-6 lg:px-8">
         <div className="mx-auto max-w-3xl text-center">
           <h2 className="text-2xl font-bold text-white sm:text-3xl">
-            Gold-Focused Copy Trading
+            Multi-Asset Bot Copy Trading
           </h2>
           <p className="mt-4 text-lg text-gray-300">
-            PAMMX is a manually traded, disciplined strategy on{" "}
-            {STRATEGY.platform}. You copy the same account the trader runs, with full
+            PAMMX is a fully automated, disciplined strategy on{" "}
+            {STRATEGY.platform}. You copy the same account the bots run, with full
             transparency on performance and drawdowns.
           </p>
         </div>
